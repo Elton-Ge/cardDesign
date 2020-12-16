@@ -1,0 +1,15 @@
+{
+  "name": "carddesign",
+  "version": "1.0.0",
+  "description": "My First CardDesign",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --out-dir ./dist"
+  },
+  "author": "Shengming",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
+}

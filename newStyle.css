@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: gray repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  font-size: 2em;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px;
+  background: url("bg-6.png") no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  box-shadow: 10px 10px 80px 10px #a3beec;
+  align-items: flex-end;
+  border-radius: 5px;
+  flex-direction: row-reverse;
+  padding: 5px;
+}
+.card__heart {
+  align-self: flex-start;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.card__heart--icon {
+  color: #FFF;
+  font-size: 180%;
+}
+.card__content {
+  background-color: #f7f5f5;
+  width: 80%;
+  height: 38%;
+  border-radius: 10px;
+  transform: translate(27px, 45px);
+  padding-left: 30px;
+}
+
+.card__iconList {
+  list-style: none;
+  display: flex;
+  font-size: 20px;
+  color: #e3c114;
+  align-items: center;
+  margin-top: 20px;
+}
+.card__iconList li {
+  margin-left: 5px;
+}
+.card__iconList li:last-child {
+  font-size: 50%;
+  color: black;
+}
+
+.card__text--name {
+  font-size: 1em;
+}
+.card__text--city {
+  font-size: 15px;
+  color: lightgray;
+}
+.card__text--price {
+  font-size: 20px;
+  transform: translateY(80%);
+}
+
+.card__icon--forward {
+  float: right;
+  margin-right: 20px;
+  font-size: 50px;
+  color: blue;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=newStyle.css.map */

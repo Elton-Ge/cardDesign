@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Card Design</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="newStyle.css">
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-    <script defer src="element.js"></script>
-
-</head>
-<body>
-<div class="container">
-    <div class="card">
+const html = function () {
+    return `<div class="card">
         <div class="card__heart">
             <ion-icon name="heart" class="card__heart--icon"></ion-icon>
         </div>
@@ -43,10 +31,10 @@
                 <ion-icon name="arrow-forward-circle" class="card__icon--forward"></ion-icon>
             </div>
         </div>
-    </div>
-</div>
+    </div>`
+}
 
-
-</body>
-</html>
-
+const container = document.querySelector('.container');
+for (let i = 0; i < 4; i++) {
+    container.insertAdjacentHTML('beforeend', html())
+}
